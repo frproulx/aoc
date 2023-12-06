@@ -2,7 +2,6 @@ import argparse
 import re
 from collections import defaultdict
 from aoc2023.utils import parse_file
-from time import time
 
 def get_symbol_locations(grid):
     symbol_locs = defaultdict(list)
@@ -53,7 +52,6 @@ def check_number(number, symbols):
 
 
 def main(fi_name):
-    t0 = time()
     grid = parse_file(fi_name)
     symbols = get_symbol_locations(grid)
 
@@ -72,7 +70,6 @@ def main(fi_name):
         for symbol_j in symbol_j_list:
             total_gear_ratios += get_gear_ratios((symbol_i, symbol_j), number_dict)
     print(f"Total gear ratios: {total_gear_ratios}")
-    print(f"Total run time: {time() - t0}")
 
 
 if __name__ == '__main__':
