@@ -10,8 +10,6 @@ def get_additive_numbers(number_list, end_numbers, start_numbers):
         return total_end_numbers, s
     else:
         n_diffs = [number_list[i] - number_list[i-1] for i in range(1, len(number_list))]
-        rev_n_diffs =  [number_list[i-1] - number_list[i] for i in range(1, len(number_list))]
-        # add the last element from current line
         end_numbers.append(number_list[-1])
         start_numbers.append(number_list[0])
         return get_additive_numbers(n_diffs, end_numbers, start_numbers)
