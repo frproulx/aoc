@@ -1,0 +1,1 @@
+Map<Zip<Map<Zip<std::slice::Iter<'_, bool>, std::slice::Iter<'_, bool>>, {closure@src/main.rs:37:17: 37:21}>, std::slice::Iter<'_, bool>>, {closure@src/main.rs:39:17: 39:21}>
